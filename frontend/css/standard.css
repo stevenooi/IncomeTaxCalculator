@@ -1,0 +1,126 @@
+
+.header1 {
+	font-family: "Arial Black","Arial";
+	font-size: 25px;
+}
+
+.header2 {
+	font-family: "Arial";
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.error {
+	font-family: "Arial";
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 5px;
+    color: red;
+}
+.submit1 {
+    border-radius: 3px;  
+    border: 1px solid silver;
+    font-family: "Arial";
+    font-size: 13px;
+    color: white;
+    width: 130px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-right: 10px;
+    border-spacing: 10px 50px;
+    background-color: #4d4dff;
+    margin-left: 261px;
+}
+.input1 {
+    border-radius: 3px;  
+    border: 1px solid silver;
+    width: 180px;
+    height: 30px;
+    padding-left: 10px;
+    border-spacing: 10px 50px;
+    margin-bottom: 5px;
+}
+
+
+.input2 { 
+    border-left: 0px solid silver;
+    border-top: 1px solid silver;
+    border-right: 0px solid silver;
+    border-bottom: 1px solid silver;
+    width: 108px;
+    height: 30px;
+    padding-left: 10px;
+    border-spacing: 10px 50px;
+    margin-bottom: 5px;
+}
+
+.input3 {
+    border-radius: 3px;  
+    border-left: 0px solid silver;
+    border-top: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+    width: 147px;
+    height: 30px;
+    padding-left: 10px;
+    border-spacing: 10px 50px;
+    margin-bottom: 5px;
+}
+
+
+
+.label1 {
+    border-radius: 3px 0px 0px 3px; 
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    padding: 8px 10px 8px 10px;
+    background-color: #eaeae1;
+    font-family: "Arial";
+    font-size: 13px;
+}
+.label2 {
+    border-radius: 0px 3px 3px 0px; 
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    padding: 5px 10px 8px 10px;
+    background-color: #eaeae1;
+    font-family: "Arial";
+}
+
+.table1
+{
+border-spacing:0em;
+}
+.table1 td{
+    padding: 5px 10px 8px 10px; 
+    border-top: 1px solid silver;
+    height: 25px;
+}
+
+.table1 td:nth-child(1) {  
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 13px; 
+    width: 200px;
+}
+
+.table1 td:nth-child(2) {   
+    font-family: "Arial";
+    font-size: 13px;
+    width: 200px;
+}
+
+.table1 tr:nth-child(even) { 
+    padding: 5px 10px 8px 10px; 
+    background-color: white;
+}
+.table1 tr:nth-child(odd) {
+    padding: 5px 10px 8px 10px; 
+    background-color: #eaeae1;
+    border-top: 1px solid silver;
+}

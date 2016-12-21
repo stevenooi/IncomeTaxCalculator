@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US"  >
+<head>
+<link rel="stylesheet" type="text/css" href="css/standard.css"> 
+
+<script src="lib/angular.min.js"></script>
+
+<script src="api/app-http.js"></script>   
+</head>
+<body ng-app="employeeSalaryApp">
+
+<div ng-controller="employeeSalaryController">  
+<form name="employeeSalaryForm" ng-submit="submitForm()">
+  <table>
+  <tr><td class="header1">Employee Info</td></tr>
+  <tr><td><input class="input1" type="text" ng-model="persons.firstName" placeholder="Firstname"></td><td><input class="input1" type="text" ng-model="persons.lastName" placeholder="Lastname"></td></tr>
+  <tr><td><label class="label1">$</label><input class="input2" type="text" ng-model="persons.salary" placeholder="Annual Salary"><label class="label2">.00</label></td><td><label class="label1">%</label><input class="input3" type="text" ng-model="persons.superAnnuation" placeholder="Super Rate"></td></tr>
+  </table> 
+    <button class="submit1" type="submit" class="btn btn-primary" onclick=";document.getElementById('displayResult').style.visibility='visible'">Generate Payslip</button>  
+</form>
+
+<div id="error" class="error">{{result.error}}</div>
+<div id="displayResult" style="visibility:hidden">
+<div class="header1">Payslip</div>
+<div class="header2">{{result.firstName}} {{result.lastName}} </div> 
+
+<table class="table1">
+<tr><td>Pay Date</td><td>{{result.payDate}}</td></tr>
+<tr><td>Pay Frequency</td><td>{{result.payFrequency}}</td></tr>
+<tr><td>Gross Income</td><td>{{result.grossIncome}}</td></tr>
+<tr><td>Income Tax</td><td>{{result.incomeTax}}</td></tr>
+<tr><td>Net Income</td><td>{{result.netIncome}}</td></tr>
+<tr><td>Super</td><td>{{result.superAnnuationNum}}</td></tr>
+<tr><td>Pay</td><td>{{result.pay}}</td></tr>
+</table> 
+</div>
+ 
+</div>
+</body>
+</html>
